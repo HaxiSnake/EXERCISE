@@ -8,6 +8,7 @@
         "utility": "cpp",
         "system_error": "cpp",
         "type_traits": "cpp",
-        "limits": "cpp"
+        "limits": "cpp",
+        "iosfwd": "cpp"
     }
 }
