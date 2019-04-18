@@ -17,6 +17,7 @@
 * [1.两数之和]()  [解答](./answer/1.两数之和.cpp)
 * [9.回文数]()  [解答](./answer/9.回文数.cpp)
 * [232.用栈实现队列]()  [解答](./answer/232.用栈实现队列.cpp)
+* [412.FizzBuzz](https://leetcode-cn.com/problems/fizz-buzz/)  [解答](./answer/412.FizzBuzz.cpp)
 * [530.二叉搜索树的最小绝对差]()  [解答](./answer/530.二叉搜索树的最小绝对差.cpp)
 * [566.重塑矩阵]()  [解答](./answer/566.重塑矩阵.cpp)
 * [575.分糖果]()  [解答](./answer/575.分糖果.cpp)
