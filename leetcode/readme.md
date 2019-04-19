@@ -10,7 +10,7 @@
 * [114.二叉树展开为链表]()  [解答](./answer/114.二叉树展开为链表.cpp)
 * [144.二叉树的前序遍历]()  [解答](./answer/144.二叉树的前序遍历.cpp)
 * [287.寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)  [解答](./answer/287.寻找重复数.cpp) &star;
-* [739.每日温度](https://leetcode-cn.com/problems/daily-temperatures/)  [解答](./answer/739.每日温度.cpp)
+* [739.每日温度](https://leetcode-cn.com/problems/daily-temperatures/)  [解答](./answer/739.每日温度.cpp) &star;
 
 
 # 初级题目
@@ -25,3 +25,4 @@
 * [762.二进制表示中质数个计算置位]()  [解答](./answer/762.二进制表示中质数个计算置位.cpp)
 * [876.链表的中间结点]()  [解答](./answer/876.链表的中间结点.cpp)
 * [883.三维形体投影面积](https://leetcode-cn.com/problems/projection-area-of-3d-shapes/)  [解答](./answer/883.三维形体投影面积.cpp)
+* [766.托普利茨矩阵](https://leetcode-cn.com/problems/toeplitz-matrix/)  [解答](./answer/766.托普利茨矩阵.cpp)
