@@ -8,6 +8,7 @@
 * [78.子集]()  [解答](./answer/78.子集.cpp)
 * [96.不同的二叉搜索树]()  [解答](./answer/96.不同的二叉搜索树.cpp)
 * [114.二叉树展开为链表]()  [解答](./answer/114.二叉树展开为链表.cpp)
+* [120.三角形最小路径和](https://leetcode-cn.com/problems/triangle/)  [解答](./answer/120.三角形最小路径和.cpp)
 * [144.二叉树的前序遍历]()  [解答](./answer/144.二叉树的前序遍历.cpp)
 * [287.寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)  [解答](./answer/287.寻找重复数.cpp) &star;
 * [739.每日温度](https://leetcode-cn.com/problems/daily-temperatures/)  [解答](./answer/739.每日温度.cpp) &star;
