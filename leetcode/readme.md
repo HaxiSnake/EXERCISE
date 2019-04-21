@@ -11,6 +11,7 @@
 * [120.三角形最小路径和](https://leetcode-cn.com/problems/triangle/)  [解答](./answer/120.三角形最小路径和.cpp)
 * [144.二叉树的前序遍历]()  [解答](./answer/144.二叉树的前序遍历.cpp)
 * [287.寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)  [解答](./answer/287.寻找重复数.cpp) &star;
+* [637.二叉树的层平均值](https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/)  [解答](./answer/637.二叉树的层平均值.cpp) 
 * [739.每日温度](https://leetcode-cn.com/problems/daily-temperatures/)  [解答](./answer/739.每日温度.cpp) &star;
 
 
@@ -18,12 +19,13 @@
 
 * [1.两数之和]()  [解答](./answer/1.两数之和.cpp)
 * [9.回文数]()  [解答](./answer/9.回文数.cpp)
+* [169.求众数](https://leetcode-cn.com/problems/majority-element/)  [解答](./answer/169.求众数.cpp) &star;
 * [232.用栈实现队列]()  [解答](./answer/232.用栈实现队列.cpp)
 * [412.FizzBuzz](https://leetcode-cn.com/problems/fizz-buzz/)  [解答](./answer/412.FizzBuzz.cpp)
 * [530.二叉搜索树的最小绝对差]()  [解答](./answer/530.二叉搜索树的最小绝对差.cpp)
 * [566.重塑矩阵]()  [解答](./answer/566.重塑矩阵.cpp)
 * [575.分糖果]()  [解答](./answer/575.分糖果.cpp)
 * [762.二进制表示中质数个计算置位]()  [解答](./answer/762.二进制表示中质数个计算置位.cpp)
+* [766.托普利茨矩阵](https://leetcode-cn.com/problems/toeplitz-matrix/)  [解答](./answer/766.托普利茨矩阵.cpp)
 * [876.链表的中间结点]()  [解答](./answer/876.链表的中间结点.cpp)
 * [883.三维形体投影面积](https://leetcode-cn.com/problems/projection-area-of-3d-shapes/)  [解答](./answer/883.三维形体投影面积.cpp)
-* [766.托普利茨矩阵](https://leetcode-cn.com/problems/toeplitz-matrix/)  [解答](./answer/766.托普利茨矩阵.cpp)
