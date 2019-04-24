@@ -13,6 +13,7 @@
 * [287.寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)  [解答](./answer/287.寻找重复数.cpp) &star;
 * [637.二叉树的层平均值](https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/)  [解答](./answer/637.二叉树的层平均值.cpp) 
 * [739.每日温度](https://leetcode-cn.com/problems/daily-temperatures/)  [解答](./answer/739.每日温度.cpp) &star;
+* [969.煎饼排序](https://leetcode-cn.com/problems/pancake-sorting/)  [解答](./answer/969.煎饼排序.cpp) 
 
 
 # 初级题目
@@ -24,6 +25,7 @@
 * [232.用栈实现队列]()  [解答](./answer/232.用栈实现队列.cpp)
 * [235.二叉搜索树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)  [解答](./answer/235.二叉搜索树的最近公共祖先.cpp)
 * [412.FizzBuzz](https://leetcode-cn.com/problems/fizz-buzz/)  [解答](./answer/412.FizzBuzz.cpp)
+* [496.下一个更大元素I](https://leetcode-cn.com/problems/next-greater-element-i/)  [解答](./answer/496.下一个更大元素I.cpp)
 * [530.二叉搜索树的最小绝对差]()  [解答](./answer/530.二叉搜索树的最小绝对差.cpp)
 * [566.重塑矩阵]()  [解答](./answer/566.重塑矩阵.cpp)
 * [575.分糖果]()  [解答](./answer/575.分糖果.cpp)
