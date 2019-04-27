@@ -26,6 +26,7 @@
 * [225.用队列实现栈](https://leetcode-cn.com/problems/implement-stack-using-queues/)  [解答](./answer/225.用队列实现栈.cpp) &star;
 * [232.用栈实现队列]()  [解答](./answer/232.用栈实现队列.cpp)
 * [235.二叉搜索树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)  [解答](./answer/235.二叉搜索树的最近公共祖先.cpp)
+* [257.二叉树的所有路径](https://leetcode-cn.com/problems/binary-tree-paths/)  [解答](./answer/257.二叉树的所有路径.cpp)
 * [412.FizzBuzz](https://leetcode-cn.com/problems/fizz-buzz/)  [解答](./answer/412.FizzBuzz.cpp)
 * [496.下一个更大元素I](https://leetcode-cn.com/problems/next-greater-element-i/)  [解答](./answer/496.下一个更大元素I.cpp)
 * [530.二叉搜索树的最小绝对差]()  [解答](./answer/530.二叉搜索树的最小绝对差.cpp)
