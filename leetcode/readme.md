@@ -11,6 +11,7 @@
 * [120.三角形最小路径和](https://leetcode-cn.com/problems/triangle/)  [解答](./answer/120.三角形最小路径和.cpp)
 * [144.二叉树的前序遍历]()  [解答](./answer/144.二叉树的前序遍历.cpp)
 * [287.寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)  [解答](./answer/287.寻找重复数.cpp) &star;
+* [341.扁平化嵌套列表迭代器](https://leetcode-cn.com/problems/flatten-nested-list-iterator/)  [解答](./answer/341.扁平化嵌套列表迭代器.cpp) 
 * [637.二叉树的层平均值](https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/)  [解答](./answer/637.二叉树的层平均值.cpp) 
 * [677.键值映射](https://leetcode-cn.com/problems/map-sum-pairs/)  [解答](./answer/677.键值映射.cpp) 
 * [739.每日温度](https://leetcode-cn.com/problems/daily-temperatures/)  [解答](./answer/739.每日温度.cpp) &star;
@@ -37,3 +38,4 @@
 * [766.托普利茨矩阵](https://leetcode-cn.com/problems/toeplitz-matrix/)  [解答](./answer/766.托普利茨矩阵.cpp)
 * [876.链表的中间结点]()  [解答](./answer/876.链表的中间结点.cpp)
 * [883.三维形体投影面积](https://leetcode-cn.com/problems/projection-area-of-3d-shapes/)  [解答](./answer/883.三维形体投影面积.cpp)
+* [1025.除数博弈](https://leetcode-cn.com/problems/divisor-game/comments/)  [解答](./answer/1025.除数博弈.cpp)
