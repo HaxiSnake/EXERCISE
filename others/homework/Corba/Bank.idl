@@ -1,0 +1,9 @@
+module Bank
+{
+    interface Account
+    {
+        readonly attribute unsigned long balance;
+        unsigned long Deposit( in unsigned long amount);
+        unsigned long Withdraw( in unsigned long amount);
+    };
+};
