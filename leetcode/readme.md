@@ -11,8 +11,10 @@
 * [120.三角形最小路径和](https://leetcode-cn.com/problems/triangle/)  [解答](./answer/120.三角形最小路径和.cpp)
 * [144.二叉树的前序遍历]()  [解答](./answer/144.二叉树的前序遍历.cpp)
 * [199.二叉树的右视图](https://leetcode-cn.com/problems/binary-tree-right-side-view/)  [解答](./answer/199.二叉树的右视图.cpp)
+* [208.实现Trie(前缀树)](https://leetcode-cn.com/problems/implement-trie-prefix-tree/)  [解答](./answer/208.实现Trie(前缀树).cpp) &star;
 * [287.寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)  [解答](./answer/287.寻找重复数.cpp) &star;
-* [341.扁平化嵌套列表迭代器](https://leetcode-cn.com/problems/flatten-nested-list-iterator/)  [解答](./answer/341.扁平化嵌套列表迭代器.cpp) 
+* [341.扁平化嵌套列表迭代器](https://leetcode-cn.com/problems/flatten-nested-list-iterator/)  [解答](./answer/341.扁平化嵌套列表迭代器.cpp)
+* [386.字典序排数](https://leetcode-cn.com/problems/lexicographical-numbers/)  [解答](./answer/386.字典序排数.cpp) &star;
 * [637.二叉树的层平均值](https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/)  [解答](./answer/637.二叉树的层平均值.cpp) 
 * [677.键值映射](https://leetcode-cn.com/problems/map-sum-pairs/)  [解答](./answer/677.键值映射.cpp) 
 * [739.每日温度](https://leetcode-cn.com/problems/daily-temperatures/)  [解答](./answer/739.每日温度.cpp) &star;
