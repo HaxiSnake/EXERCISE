@@ -1,9 +1,4 @@
-import os
-os.chdir(os.path.dirname(__file__))
-title="8.用两个栈实现队列"
-content="用两个栈来实现一个队列，完成队列的Push和Pop操作。 队列中的元素为int类型。"
-isstar=False
-code="""
+
 class Solution
 {
 public:
@@ -36,18 +31,3 @@ private:
     stack<int> stack1;
     stack<int> stack2;
 };
-"""
-md_list="* [{0}](#{0}) [解答](./{0}.cpp)".format(title)
-essay="## {0}\n\n{1}\n".format(title,content)
-if(isstar):
-    md_list+=" &star;"
-
-print(md_list)
-print(essay)
-
-with open("{0}.cpp".format(title),'w') as out:
-    out.writelines(code)
-out.close()
-
-
-

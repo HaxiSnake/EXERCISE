@@ -1,0 +1,9 @@
+javac DataTransServerImpl.java DataTransApplet.java -encoding utf-8
+rmic DataTransServerImpl DataTransClientImpl
+set classpath=
+rmiregistry
+
+java -Djava.security.policy=java.policy -Djava.rmi.server.codebase=file:///F:\workspace_local\Learn\EXERCISE\others\homework\Corba\DataTrans\ DataTransServerImpl
+
+
+appletviewer -J-Djava.security.policy=java.policy DataTrans.html
