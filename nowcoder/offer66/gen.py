@@ -1,40 +1,31 @@
 import os
 os.chdir(os.path.dirname(__file__))
-title="8.用两个栈实现队列"
-content="用两个栈来实现一个队列，完成队列的Push和Pop操作。 队列中的元素为int类型。"
+title="10.连续子数组的最大和"
+content="HZ偶尔会拿些专业问题来忽悠那些非计算机专业的同学.今天测试组开完会后,他又发话了:在古老的一维模式识别中,常常需要计算连续子向量的最大和,当向量全为正数的时候,问题很好解决.但是,如果向量中包含负数,是否应该包含某个负数,并期望旁边的正数会弥补它呢？例如:{6,-3,-2,7,-15,1,2,2},连续子向量的最大和为8(从第0个开始,到第3个为止).给一个数组,返回它的最大连续子序列的和,你会不会被他忽悠住?(子向量的长度至少是1)"
 isstar=False
 code="""
-class Solution
-{
+class Solution {
 public:
-    void push(int node) {
-        stack1.push(node);
-    }
- 
-    int pop() {
-        if(!stack2.empty()){
-            int res=stack2.top();
-            stack2.pop();
-            return res;
-        }else{
-            if(!stack1.empty()){
-                while(!stack1.empty()){
-                    int res=stack1.top();
-                    stack2.push(res);
-                    stack1.pop();
-                }
-                int res=stack2.top();
-                stack2.pop();
-                return res;
-            }else{
-                return -1;
+    int FindGreatestSumOfSubArray(vector<int> array) {
+        int i = 0,maxsub=array[0];
+         
+        for(i=0;i<array.size();i++){
+            if(maxsub<array[i]) maxsub=array[i];
+            if(array[i]>=0) break;
+        }
+        if(i==array.size()) return maxsub;
+        int sum=0;
+        for(;i<array.size();i++){
+            sum+=array[i];
+            if(sum>maxsub){
+                maxsub=sum;
+            }
+            if(sum<=0){
+                sum=0;
             }
         }
+        return maxsub;
     }
- 
-private:
-    stack<int> stack1;
-    stack<int> stack2;
 };
 """
 md_list="* [{0}](#{0}) [解答](./{0}.cpp)".format(title)
