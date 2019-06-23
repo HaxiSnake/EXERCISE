@@ -1,19 +1,26 @@
 import os
 os.chdir(os.path.dirname(__file__))
-title="12.跳台阶"
-content="一只青蛙一次可以跳上1级台阶，也可以跳上2级.求该青蛙跳上一个n级的台阶总共有多少种跳法(先后次序不同算不同的结果). "
-isstar=False
+title="14.两个链表的第一个公共结点"
+content="输入两个链表，找出它们的第一个公共结点。"
+isstar=True
 code="""
+/*
+struct ListNode {
+    int val;
+    struct ListNode *next;
+    ListNode(int x) :
+            val(x), next(NULL) {
+    }
+};*/
 class Solution {
 public:
-    int jumpFloor(int number) {
-        if(number<1) return 0;
-        int a=1,b=2;
-        while(--number){
-            b=a+b;
-            a=b-a;
+    ListNode* FindFirstCommonNode( ListNode* pHead1, ListNode* pHead2) {
+        ListNode* p1=pHead1,*p2=pHead2;
+        while(p1!=p2){
+            p1=p1==NULL?pHead1:p1->next;
+            p2=p2==NULL?pHead2:p2->next;
         }
-        return a;
+        return p1;
     }
 };
 """
