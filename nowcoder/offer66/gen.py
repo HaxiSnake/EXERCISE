@@ -1,33 +1,34 @@
 import os
 os.chdir(os.path.dirname(__file__))
-title="18.链表中环的入口节点"
-content="给一个链表，若其中包含环，请找出该链表的环的入口结点，否则，输出null。"
+title="20.字符流中第一个不重复的字符"
+content="请实现一个函数用来找出字符流中第一个只出现一次的字符。例如，当从字符流中只读出前两个字符'go'时，第一个只出现一次的字符是'g'。当从该字符流中读出前六个字符'google'时，第一个只出现一次的字符是'l'。"
 isstar=True
 code="""
-class Solution {
+class Solution
+{
+private:
+    queue<char> data;
+    int cnt[128];
 public:
-    ListNode* EntryNodeOfLoop(ListNode* pHead)
+  //Insert one char from stringstream
+    void Insert(char ch)
     {
-        if(pHead==NULL || pHead->next==NULL || pHead->next->next==NULL)
-            return NULL;
-        ListNode* fast=pHead->next->next;
-        ListNode* slow=pHead->next;
-        while(fast!=slow){
-            if(fast!=NULL && slow!=NULL && fast->next!=NULL ){
-                fast=fast->next->next;
-                slow=slow->next;
-            }else{
-                return NULL;
-            }
+         cnt[ch-'\0']++;
+        if(cnt[ch-'\0']==1){
+            data.push(ch);
         }
-        fast=pHead;
-        while(fast!=slow){
-            fast=fast->next;
-            slow=slow->next;
-        }
-        return fast;
-        
     }
+  //return the first appearence once char in current stringstream
+    char FirstAppearingOnce()
+    {
+        while(!data.empty() && cnt[data.front()-'\0']>1) data.pop();
+        if(data.empty()) return '#';
+        else return data.front();
+    }
+    Solution(){
+        memset(cnt,0,sizeof(cnt));
+    }
+ 
 };
 """
 md_list="* [{0}](#{0}) [解答](./{0}.cpp)".format(title)
