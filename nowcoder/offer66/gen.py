@@ -1,35 +1,29 @@
 import os
 os.chdir(os.path.dirname(__file__))
-title="20.字符流中第一个不重复的字符"
-content="请实现一个函数用来找出字符流中第一个只出现一次的字符。例如，当从字符流中只读出前两个字符'go'时，第一个只出现一次的字符是'g'。当从该字符流中读出前六个字符'google'时，第一个只出现一次的字符是'l'。"
+title="21.对称的二叉树"
+content="请实现一个函数，用来判断一颗二叉树是不是对称的。注意，如果一个二叉树同此二叉树的镜像是同样的，定义其为对称的。"
 isstar=True
 code="""
-class Solution
-{
-private:
-    queue<char> data;
-    int cnt[128];
-public:
-  //Insert one char from stringstream
-    void Insert(char ch)
+/*思路：首先根节点以及其左右子树，左子树的左子树和右子树的右子树相同
+* 左子树的右子树和右子树的左子树相同即可，采用递归
+* 非递归也可，采用栈或队列存取各级子树根节点
+*/
+public class Solution {
+    boolean isSymmetrical(TreeNode pRoot)
     {
-         cnt[ch-'\0']++;
-        if(cnt[ch-'\0']==1){
-            data.push(ch);
+        if(pRoot == null){
+            return true;
         }
+        return comRoot(pRoot.left, pRoot.right);
     }
-  //return the first appearence once char in current stringstream
-    char FirstAppearingOnce()
-    {
-        while(!data.empty() && cnt[data.front()-'\0']>1) data.pop();
-        if(data.empty()) return '#';
-        else return data.front();
+    private boolean comRoot(TreeNode left, TreeNode right) {
+        // TODO Auto-generated method stub
+        if(left == null) return right==null;
+        if(right == null) return false;
+        if(left.val != right.val) return false;
+        return comRoot(left.right, right.left) && comRoot(left.left, right.right);
     }
-    Solution(){
-        memset(cnt,0,sizeof(cnt));
-    }
- 
-};
+}
 """
 md_list="* [{0}](#{0}) [解答](./{0}.cpp)".format(title)
 essay="## {0}\n\n{1}\n".format(title,content)
