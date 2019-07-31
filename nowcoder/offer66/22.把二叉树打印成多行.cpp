@@ -1,9 +1,4 @@
-import os
-os.chdir(os.path.dirname(__file__))
-title="22.把二叉树打印成多行"
-content="从上到下按层打印二叉树，同一层结点从左至右输出。每一层输出一行。 "
-isstar=False
-code="""
+
 /*
 struct TreeNode {
     int val;
@@ -46,18 +41,3 @@ public:
         }
      
 };
-"""
-md_list="* [{0}](#{0}) [解答](./{0}.cpp)".format(title)
-essay="## {0}\n\n{1}\n".format(title,content)
-if(isstar):
-    md_list+=" &star;"
-
-print(md_list)
-print(essay)
-
-with open("{0}.cpp".format(title),'w') as out:
-    out.writelines(code)
-out.close()
-
-
-
