@@ -1,9 +1,4 @@
-import os
-os.chdir(os.path.dirname(__file__))
-title="24.数字在排序数组中出现的次数"
-content="统计一个数字在排序数组中出现的次数。"
-isstar=False
-code="""
+
 class Solution {
 public:
     int GetNumberOfK(vector<int> data ,int k) {
@@ -43,18 +38,3 @@ public:
         return r_k-l_k-1;
     }
 };
-"""
-md_list="* [{0}](#{0}) [解答](./{0}.cpp)".format(title)
-essay="## {0}\n\n{1}\n".format(title,content)
-if(isstar):
-    md_list+=" &star;"
-
-print(md_list)
-print(essay)
-
-with open("{0}.cpp".format(title),'w') as out:
-    out.writelines(code)
-out.close()
-
-
-
