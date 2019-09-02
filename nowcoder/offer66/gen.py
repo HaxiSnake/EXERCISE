@@ -1,39 +1,26 @@
 import os
 os.chdir(os.path.dirname(__file__))
-title="27.反转链表"
-content="输入一个链表，反转链表后，输出新链表的表头。"
-isstar=False
+title="29. 和为S的两个数字"
+content="输入一个递增排序的数组和一个数字S，在数组中查找两个数，使得他们的和正好是S，如果有多对数字的和等于S，输出两个数的乘积最小的。 "
+isstar=True
 code="""
-/*
-struct ListNode {
-    int val;
-    struct ListNode *next;
-    ListNode(int x) :
-            val(x), next(NULL) {
-    }
-};*/
+typedef vector<int> vi;
 class Solution {
 public:
-    ListNode* ReverseList(ListNode* pHead) {
-        if(pHead==NULL) return NULL;
-        if(pHead->next==NULL) return pHead;
-        ListNode* head=NULL;
-        ListNode* cur=pHead;
-        while(cur!=NULL && cur->next!=NULL){
-            ListNode* tmp = cur->next;
-            cur->next=head;
-            ListNode* tmpcur = tmp->next;
-            tmp->next=cur;
-            cur=tmpcur;
-            head=tmp;
+    vi FindNumbersWithSum(const vi& a,int sum) {
+        vi res;
+        int n = a.size();
+        int i = 0, j = n - 1;
+        while(i < j){
+            if(a[i] + a[j] == sum){
+                res.push_back(a[i]);
+                res.push_back(a[j]);
+                break;
+            }
+            while(i < j && a[i] + a[j] > sum) --j;
+            while(i < j && a[i] + a[j] < sum) ++i;
         }
-        if(cur==NULL){
-            return head;
-        }else{
-            cur->next=head;
-            head=cur;
-        }
-        return head;
+        return res;
     }
 };
 """
