@@ -1,37 +1,29 @@
 import os
 os.chdir(os.path.dirname(__file__))
-title="31.数组中出现次数超过一半的数字"
-content="数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。例如输入一个长度为9的数组{1,2,3,2,2,2,5,4,2}。由于数字2在数组中出现了5次，超过数组长度的一半，因此输出2。如果不存在则输出0."
+title="32.把数组排成最小的数"
+content="输入一个正整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。例如输入数组{3，32，321}，则打印出这三个数字能排成的最小数字为321323。"
 isstar=True
 code="""
+class Solution {
 public:
-    int MoreThanHalfNum_Solution(vector<int> numbers) {
-        int len = numbers.size();
-        if(len<=0) return 0;
-        if(len==1) return numbers[0];
-        int value,count;
-        value=numbers[0];
-        count=1;
-        for(int i=0; i<len; i++){
-            int num = numbers[i];
-            if(count==0){
-                value = num;
-                count = 1;
-            }else{
-                if(value==num){
-                    count++;
-                }else{
-                    count--;
-                }
-            }
+    static bool cmp(int a, int b){
+        string A="";
+        string B="";
+        A+=to_string(a);
+        A+=to_string(b);
+        B+=to_string(b);
+        B+=to_string(a);
+        return A<B;
+    }
+    string PrintMinNumber(vector<int> numbers) {
+        int len=numbers.size();
+        if(len<=0) return "";
+        sort(numbers.begin(),numbers.end(),cmp);
+        string ans="";
+        for(int i=0;i<len;i++){
+            ans+=to_string(numbers[i]);
         }
-        count=0;
-        for(int i=0 ; i<len; i++){
-            if(numbers[i]==value){
-                count++;
-            }
-        }
-        return count>len/2?value:0;        
+        return ans;
     }
 };
 """
