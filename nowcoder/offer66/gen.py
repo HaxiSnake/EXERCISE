@@ -1,29 +1,28 @@
 import os
 os.chdir(os.path.dirname(__file__))
-title="32.把数组排成最小的数"
-content="输入一个正整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。例如输入数组{3，32，321}，则打印出这三个数字能排成的最小数字为321323。"
-isstar=True
+title="33.剪绳子"
+content="给你一根长度为n的绳子，请把绳子剪成m段（m、n都是整数，n>1并且m>1），每段绳子的长度记为k[0],k[1],...,k[m]。请问k[0]xk[1]x...xk[m]可能的最大乘积是多少？例如，当绳子的长度是8时，我们把它剪成长度分别为2、3、3的三段，此时得到的最大乘积是18。 "
+isstar=False
 code="""
 class Solution {
 public:
-    static bool cmp(int a, int b){
-        string A="";
-        string B="";
-        A+=to_string(a);
-        A+=to_string(b);
-        B+=to_string(b);
-        B+=to_string(a);
-        return A<B;
-    }
-    string PrintMinNumber(vector<int> numbers) {
-        int len=numbers.size();
-        if(len<=0) return "";
-        sort(numbers.begin(),numbers.end(),cmp);
-        string ans="";
-        for(int i=0;i<len;i++){
-            ans+=to_string(numbers[i]);
+    int cutRope(int number) {
+        int n = number;
+        vector<int> res(n+1);
+        if(n<2 || n>60) return 0;
+        res[1]=1;
+        if(n==2) return 1;
+        if(n==3) return 2;
+        res[2]=2;
+        res[3]=3;
+        for(int i=4;i<=n;i++){
+            res[i]=max(res[i-1],i);
+            for(int j=1;j<n;j++){
+                int multi = res[j]*res[i-j];
+                res[i]=res[i]>multi?res[i]:multi;
+            }
         }
-        return ans;
+        return res[n];
     }
 };
 """
