@@ -1,9 +1,4 @@
-import os
-os.chdir(os.path.dirname(__file__))
-title="34.合并两个排序的链表"
-content="输入两个单调递增的链表，输出两个链表合成后的链表，当然我们需要合成后的链表满足单调不减规则。"
-isstar=False
-code="""
+
 /*
 struct ListNode {
     int val;
@@ -46,18 +41,3 @@ public:
         return head;
     }
 };
-"""
-md_list="* [{0}](#{0}) [解答](./{0}.cpp)".format(title)
-essay="## {0}\n\n{1}\n".format(title,content)
-if(isstar):
-    md_list+=" &star;"
-
-print(md_list)
-print(essay)
-
-with open("{0}.cpp".format(title),'w') as out:
-    out.writelines(code)
-out.close()
-
-
-
