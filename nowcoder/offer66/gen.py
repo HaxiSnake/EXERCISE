@@ -1,40 +1,35 @@
 import os
 os.chdir(os.path.dirname(__file__))
-title="35.把字符串转换成整数"
-content="将一个字符串转换成一个整数(实现Integer.valueOf(string)的功能，但是string不符合数字要求时返回0)，要求不能使用字符串转换整数的库函数。 数值为0或者字符串不是一个合法的数值则返回0。"
+title="37.和为S的连续正数序列"
+content="小明很喜欢数学,有一天他在做数学作业时,要求计算出9~16的和,他马上就写出了正确答案是100。但是他并不满足于此,他在想究竟有多少种连续的正数序列的和为100(至少包括两个数)。没多久,他就得到另一组连续正数和为100的序列:18,19,20,21,22。现在把问题交给你,你能不能也很快的找出所有和为S的连续正数序列? Good Luck! "
 isstar=True
 code="""
 class Solution {
 public:
-    int StrToInt(string str) {
-        if(str.length()==0) return 0;
-        //if(str.length()>10) return 0;
-        int flag=1;
-        int i=0;
-        if(str[0]=='+'){
-            flag=1;
-            i = 1;
-        }else if(str[0]=='-'){
-            flag=-1;
-            i = 1;
-        }
-        int res=0;
-        for(;i<str.length();i++){
-            if(str[i]<'0' || str[i]>'9') return 0;
-            int delta = INT_MAX - res*10;
-            int bit = str[i]-'0';
-             
-            if(flag==1){
-                if(delta<bit) return 0;
-            }else{
-                if(delta!=INT_MAX){
-                    if(delta+1<bit) return 0;
-                    if(delta+1==bit) return INT_MIN;
+    vector<vector<int> > FindContinuousSequence(int sum) {
+        vector<int> item;
+        vector<vector<int>> res;
+        int plow,phigh;
+        plow=1;
+        phigh=2;
+        while(plow<phigh){
+            int num = (plow+phigh)*(phigh-plow+1)/2;
+            if(num==sum){
+                item.clear();
+                for(int i=plow;i<=phigh;i++){
+                    item.push_back(i);
                 }
+                res.push_back(item);
+                plow++;
             }
-            res = res*10 + bit;
+            else if(num<sum){
+                phigh++;
+            }
+            else if(num>sum){
+                plow++;
+            }
         }
-        return flag*res;
+        return res;
     }
 };
 """
